@@ -4,7 +4,7 @@ stages{
 stage ('Test'){
 steps {
 echo "running the test stage"
-  sh 'ant -f test.xml-v'
+  sh 'ant -f test.xml -v'
   junit 'reports/result.xml'
   echo "exiting the test stage"
 }
